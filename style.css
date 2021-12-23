@@ -56,6 +56,7 @@ a,p,h1,h2,h3,h4,li{
     margin-left: 6.5%;
 }
 .about {
+    
     flex-basis: 50%;
 }
 .pic {
@@ -111,3 +112,21 @@ a,p,h1,h2,h3,h4,li{
 .social-media-div {
     margin-top: 20px;
 }
+
+
+.intro-btns a{
+text-decoration: none;
+padding: 15px 30px;
+background-color: blueviolet;
+color: white;
+font-weight:bold; 
+border-radius:8px;
+transition: .3s all;
+}
+
+.intro-btns a:hover{
+    border: 2px solid blueviolet;
+    color: black;
+    background-color: transparent;
+    
+    }
