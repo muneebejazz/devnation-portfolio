@@ -2,16 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @import url('http://fonts.cdnfonts.com/css/agustina');
 /* fonts end */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-
-
+a,p,h1,h2,h3,h4,li{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+}
 .navbar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
 }
 
-.navbar .brand .name{
-    font-family: 'Agustina', sans-serif;;
+.brand p{
+    font-size: 2rem;
 }
+.name{
+    font-family: 'Agustina', sans-serif;
+    font-size: 1.5rem;
+    color: #551A8B;
+    font-weight: bold;
+}
+
 
 .link-menu-list {
     list-style: none;
@@ -22,17 +39,75 @@
 }
 
 .link-menu-list a {
-    font-family: 'Didact Gothic', sans-serif;
     text-decoration: none;
     padding: 10px 15px;
-    color: rgb(66, 66, 66);
-    background-color: rgb(247, 247, 247);
-    border-radius: 4px;
-    font-size: 1.5rem;
+    color: #000 ;
+    font-size: 1.2rem;
 }
 
 .link-menu-list a:hover {
-    
     background-color: rgb(223, 223, 223);
-    
+}
+
+.intro {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6.5%;
+}
+.about {
+    flex-basis: 50%;
+}
+.pic {
+    flex-basis: 50%;
+}
+.about > h1 {
+    font-size: 50px;
+}
+.about > p {
+    margin-top: 35px;
+    font-size: 25px;
+    color: #8D949C;
+    line-height: 40px;
+}
+.icon-button {
+    padding: 10px;
+    font-size: 1.4rem;
+    /* margin: 5px 10px */
+    text-align: center;
+    border-radius: 50%;;
+    /* background-color: #fff; */
+    color: #fff;
+    display: inline-block;
+    width: 3.0rem;
+    height: 3.0rem;
+    margin-left: 8px;
+    transition: .5s all ease-in-out;
+}
+.github {
+    background-color: black;
+}
+.linkedin {
+    background-color: #0e76a8;
+}
+.google {
+    background-color: #ea4335;
+}
+.gitlab {
+    background-color: #fca326;
+}
+.facebook {
+    background-color: #0e76a8;
+}
+.medium {
+    background-color: black;
+}
+.stack-overflow {
+    background-color: #fca326;
+} 
+.icon-button:hover {
+    background-color:  black;
+}
+.social-media-div {
+    margin-top: 20px;
 }
