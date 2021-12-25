@@ -113,20 +113,28 @@ a,p,h1,h2,h3,h4,li{
     margin-top: 20px;
 }
 
+.intro-btns {
+    display: flex;
+    margin-top: 30px;
+}
 
 .intro-btns a{
-text-decoration: none;
-padding: 15px 30px;
-background-color: blueviolet;
-color: white;
-font-weight:bold; 
-border-radius:8px;
-transition: .3s all;
+    /* font-size: 20px; */
+    text-decoration: none;
+    padding: 13px 22px;
+    background-color: #55198b;
+    color: white;
+    font-weight:bold; 
+    border-radius:8px;
+    transition: all .3s ease-in-out 0s;
+    margin-right: 50px;
+    border: 2px solid #55198b;
+    margin-top: 15px;
 }
 
 .intro-btns a:hover{
-    border: 2px solid blueviolet;
-    color: black;
-    background-color: transparent;
-    
-    }
+    background-color: #ffffff;
+    color: #55198b;
+    transition: all .3s ease 0s;
+    transform: translateY(-3px);
+}
